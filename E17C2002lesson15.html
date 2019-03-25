@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>初代ポケモンバトル</title>
+	<link rel='stylesheet' type='text/css' href='E17C2002lesson15.css' type='text/css'>
+	<script language='javascript' type='text/javascript' src='E17C2002lesson15.js'></script>
+</head>
+
+<body>
+	<h1>初代ポケモンバトル</h1>
+	<div class="border">
+		<div class="box1" id=enemy>
+			<div class="left">
+				たつべえ：Lv50
+				<br> HP:
+				<meter id="enemyDamaged" value="100" min="0" max="100"></meter>
+				<div id=HPgageE></div>
+			</div>
+		</div>
+		<div class="box2" id=ally>
+			<div class="right">
+				ねこはち：Lv50
+				<br> HP:
+				<meter id="allyDamaged" value="100" min="0" max="100"></meter>
+				<div id=HPgageA></div>
+			</div>
+		</div>
+		<div class="box3">
+			<p id=message1></p>
+			<p id=message2></p>
+		</div>
+	</div>
+	<p>
+		<button name="allySkill">でんきショック</button>
+		<button name="allySkill">でんじは</button>
+		<button name="allySkill">ねむる</button>
+		<button name="reset" style="margin-left:130px;">リセット</button>
+	</p>
+
+</body>
+
+</html>
