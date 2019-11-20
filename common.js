@@ -264,8 +264,8 @@ window.onload = function () {
 		startGageA.innerHTML = allyHP + " / " + maxAllyHP;
 
 		// 倒れたポケモンの画像を復帰
-		document.getElementById('ally').style.backgroundImage = "url('images/pokemonP.jpg')";
-		document.getElementById('enemy').style.backgroundImage = "url('images/pokemonL.jpg')";
+		document.getElementById('ally').style.backgroundImage = "url('images/bakemonP.png')";
+		document.getElementById('enemy').style.backgroundImage = "url('images/bakemonL.png')";
 
 		// HPゲージ・戦闘メッセージの更新
 		meterberE.value = enemyHP / maxEnemyHP * 100;
