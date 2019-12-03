@@ -75,7 +75,7 @@ var enemy = {
 				// 「乱数2のとき」は攻撃できないが、状態異常をリセット
 				paralys = false;
 				cure = 0; // 乱数の初期化
-				var message = document.getElementById('message2');
+				message = document.getElementById('message2');
 				message.innerHTML = this.name + "の しびれがとれた！";
 			}
 		} else {
@@ -151,7 +151,7 @@ var ally = {
 function judge() {
 	if (allyHP <= 0 && enemyHP <= 0) {
 		// 相打ちになって両方倒れた場合
-		allyHP = 0;　// マイナスにしない（以下同じ）
+		allyHP = 0;// マイナスにしない（以下同じ）
 		enemyHP = 0;
 		// 両方のポケモンの画像を消す
 		document.getElementById('ally').style.backgroundImage = "none";
@@ -159,7 +159,7 @@ function judge() {
 		// メッセージの更新
 		var message1 = document.getElementById('message1');
 		var message2 = document.getElementById('message2');
-		message1.innerHTML = "たたかえる ポケモンが いなくなった……";
+		message1.innerHTML = "たたかえる ポ〇モンが いなくなった……";
 		message2.innerHTML = "";
 	} else if (allyHP <= 0) {
 		// 先に味方ポケモンが倒れた場合
@@ -167,8 +167,8 @@ function judge() {
 		// 味方ポケモンの画像を消す
 		document.getElementById('ally').style.backgroundImage = "none";
 		// メッセージの更新
-		var message1 = document.getElementById('message1');
-		var message2 = document.getElementById('message2');
+		message1 = document.getElementById('message1');
+		message2 = document.getElementById('message2');
 		message1.innerHTML = ally.name + "は たおれた！";
 		message2.innerHTML = "";
 	} else if (enemyHP <= 0) {
@@ -177,8 +177,8 @@ function judge() {
 		// 敵ポケモンの画像を消す
 		document.getElementById('enemy').style.backgroundImage = "none";
 		// メッセージの更新
-		var message1 = document.getElementById('message1');
-		var message2 = document.getElementById('message2');
+		message1 = document.getElementById('message1');
+		message2 = document.getElementById('message2');
 		message1.innerHTML = enemy.name + "を たおした！";
 		message2.innerHTML = "";
 	}
@@ -208,7 +208,7 @@ window.onload = function () {
 	// 初期メッセージ
 	var message1 = document.getElementById('message1');
 	var message2 = document.getElementById('message2');
-	message1.innerHTML = "ポケモンが あらわれた！";
+	message1.innerHTML = "ポ〇モンが あらわれた！";
 	message2.innerHTML = "";
 
 	// ボタン名を取得して配列に入れる
@@ -270,7 +270,7 @@ window.onload = function () {
 		// HPゲージ・戦闘メッセージの更新
 		meterberE.value = enemyHP / maxEnemyHP * 100;
 		meterberA.value = allyHP / maxAllyHP * 100;
-		message1.innerHTML = "ポケモンが あらわれた！";
+		message1.innerHTML = "ポ〇モンが あらわれた！";
 		message2.innerHTML = "";
 
 		// ボタンのロックを解除
